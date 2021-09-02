@@ -8,7 +8,7 @@ const config = {
 	mysql: {
 		HOST: process.env.DB_HOST,
 		USER: process.env.DB_USER,
-		PASSWORD: "",
+		PASSWORD: process.env.PASSWORD,
 		DB: process.env.DB_NAME,
 		dialect: process.env.DIALECT,
 		pool: {
