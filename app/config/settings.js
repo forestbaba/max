@@ -2,7 +2,7 @@ require('dotenv').config();
 const config = {
 	appName: process.env.APP_NAME,
 	env: process.env.NODE_ENV || 'development',
-	port: process.env.PORT,
+	port: '/var/run/mysqld/mysqld.sock',
 	allowOrigin: process.env.ALLOW_ORIGIN,
 
 	mysql: {
