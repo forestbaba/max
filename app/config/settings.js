@@ -10,6 +10,7 @@ const config = {
 		USER: process.env.DB_USER,
 		PASSWORD: process.env.PASSWORD,
 		DB: process.env.DB_NAME,
+		PORT:process.env.MPORT,
 		dialect: process.env.DIALECT,
 		pool: {
 			max: 5,

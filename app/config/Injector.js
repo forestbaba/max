@@ -11,6 +11,7 @@ const Validator = require("../utility/middleware/validator");
 
 const serviceFinder = require("../utility/servicefinder");
 
+
 serviceFinder.register("logger", () => {
     const loggings = new (winston.transports.Console)({
       level: settings.env === "development" ? "debug" : "info",
@@ -37,7 +38,6 @@ serviceFinder.register("logger", () => {
 
 serviceFinder.register("moviesWrapper", (locator) => {
   db.sequelize.sync();
-
 
   
   const d = db.sequelize.sync({}).then(() => {
