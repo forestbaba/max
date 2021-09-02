@@ -49,7 +49,7 @@ app.use(
 );
 
 app.use(helmet());
-app.disable("x-powered-by");
+// app.disable("x-powered-by");
 app.use(methodOverride());
 
 const APIRouter = express.Router();
