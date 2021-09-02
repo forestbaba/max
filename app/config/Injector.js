@@ -74,5 +74,4 @@ serviceFinder.register("moviesController", (locator) => {
 
 serviceFinder.register("validator", () => new Validator());
 
-
   module.exports = serviceFinder;

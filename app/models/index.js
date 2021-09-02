@@ -6,9 +6,9 @@ const settings = require("../config/settings");
 
 console.log(`==Connect DB: ${settings.mysql.DB} -USER: ${settings.mysql.USER}  -P: ${settings.mysql.PASSWORD}`)
 let sequelize = null
-if (process.env.DATABASE_URL) {
+if (process.env.CLEARDB_DATABASE_URL) {
   // the application is executed on Heroku ... use the postgres database
-   sequelize = new Sequelize(process.env.DATABASE_URL, {
+   sequelize = new Sequelize(process.env.CLEARDB_DATABASE_URL, {
     dialect:  'mysql',
     protocol: 'mysql',
     logging:  true //false
