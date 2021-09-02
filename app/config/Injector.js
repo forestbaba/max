@@ -11,7 +11,6 @@ const Validator = require("../utility/middleware/validator");
 
 const serviceFinder = require("../utility/servicefinder");
 
-
 serviceFinder.register("logger", () => {
     const loggings = new (winston.transports.Console)({
       level: settings.env === "development" ? "debug" : "info",
