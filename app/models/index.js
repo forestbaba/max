@@ -4,6 +4,7 @@ const MoviesAttr = require('./movie_att');
 const settings = require("../config/settings");
 
 
+console.log(`==Connect DB: ${settings.mysql.DB} -USER: ${settings.mysql.USER}  -P: ${settings.mysql.PASSWORD}`)
 const sequelize = new Sequelize(settings.mysql.DB, settings.mysql.USER,settings.mysql.PASSWORD, {
     host: settings.mysql.HOST,
     dialect: settings.mysql.dialect,
